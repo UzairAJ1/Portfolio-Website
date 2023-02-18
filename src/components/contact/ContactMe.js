@@ -14,7 +14,7 @@ const ContactMe = () => {
     console.log(watch("example"));
     return (
         <>
-        <div className='flex flex-col w-full h-screen items-center justify-center md:gap-6 gap-4'>
+        <div className='flex flex-col w-full h-screen items-center justify-center md:gap-6 gap-4 container mx-auto'>
             <h2 className='pt-12text-center text-2xl uppercase font-semibold text-gray-500 tracking-[11px] hover:tracking-[2px] hover:duration-500 duration-2000 cursor-pointer'>contact</h2>
             <div className='text-center'>
                 <h1 className='text-4xl font-semibold'>I have got what you need</h1>
