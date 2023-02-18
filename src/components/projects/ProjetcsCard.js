@@ -10,10 +10,10 @@ const ProjetcsCard = ({description,backgroundImg,title}) => {
     
     <>
         
-      <div  className='flex flex-col w-full flex-shrink-0 items-center snap-center'>
+      <div  className='py-12 flex flex-col w-full flex-shrink-0 items-center snap-center'>
         <div className='z-10 h-full w-full  bg-transparent flex flex-col gap-4 items-center snap-center'>
           <motion.div initial={{scale:0 }} whileInView={{ scale:1 }} viewport={{once:true}} transition={{ duration: 0.6 }}
-            className='relative h-[200px] w-[420px] '>
+            className='relative md:h-[200px] md:w-[420px] h-[100px] w-[220px] '>
             <Image src={backgroundImg} objectFit='cover' layout='fill' />
           </motion.div>
           <h1 className='text-4xl font-light'>{title}</h1>
