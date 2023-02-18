@@ -29,37 +29,37 @@ const Skills = () => {
                     whileInView={{ x: 0 }} viewport={{once:true}} transition={{ duration: 0.5 }}
                     className=' flex flex-col gap-2'>
                     <div className='grid grid-cols-4 '>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={react} percent="95%" />
                             <h1 className='text-center'>React</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={tailwindcss} percent="95%" />
                             <h1 className='text-center'>TailWind Css</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={bootstrap} percent="98%" />
                             <h1 className='text-center'>BootStrap</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={css} percent="98%" />
                             <h1 className='text-center'>CSS</h1>
                         </div>
                     </div>
                     <div className='grid  grid-cols-4'>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={javascript} percent="90%" />
                             <h1 className='text-center'>javascript</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={next} percent="90%" />
                             <h1 className='text-center'>Next js</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={html} percent="92%" />
                             <h1 className='text-center'>HTML</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center '>
                             <Skill backgroundImg={node} percent="80%" />
                             <h1 className='text-center'>Node js</h1>
                         </div>
@@ -69,32 +69,39 @@ const Skills = () => {
                     whileInView={{ x: 0 }} viewport={{once:true}} transition={{ duration: 0.5 }}
                     className=' flex flex-col gap-2'>
                     <div className='grid grid-cols-4'>
-                        <div>
+                        <div className='flex flex-col items-center justify-center' >
                             <Skill backgroundImg={redux} percent="85%"/>
                             <h1 className='text-center'>Redux</h1>
                         </div>
-                        <div>
+                        <div className=' flex flex-col items-center justify-center' >
                             <Skill backgroundImg={seo} percent="95%"/>
                             <h1 className='text-center'>SEO</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center' >
                             <Skill backgroundImg={mongo} percent="80%"/>
                             <h1 className='text-center'>MongoDB</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center' >
                             <Skill backgroundImg={python} percent="80%"/>
                             <h1 className='text-center'>Python</h1>
                         </div>
                     </div>
                     <div className='grid grid-cols-4'>
-                        <div>
+                        <div className='flex flex-col items-center justify-center' >
                             <Skill backgroundImg={git} percent="80%"/>
                             <h1 className='text-center'>Git</h1>
                         </div>
-                        <div>
+                        <div className='flex flex-col items-center justify-center' >
                             <Skill backgroundImg={figma} percent="75%"/>
                             <h1 className='text-center'>Figma</h1>
                         </div>
+                        <div className='flex flex-col items-center justify-center' >
+                           
+                        </div>
+                        <div className='flex flex-col items-center justify-center' >
+                           
+                        </div>
+                        
                     </div>
                 </motion.div>
             </div>
