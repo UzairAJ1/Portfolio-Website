@@ -35,7 +35,7 @@ const ContactMe = () => {
 
             <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2'>
                 <div className='flex gap-2'>
-                    <input {...register("Name", { required: true })} placeholder='Name' type="text" className='bg-[#2F3133] h-[40px] px-8' />
+                    <input {...register("Name", { required: true })} placeholder='Name' type="text" className='bg-[#2F3133] h-[40px] px-8 md:w-auto w-40' />
                     
                     <input {...register("Email", { required: true })} placeholder='Email' type="email" className='bg-[#2F3133] px-8' />
                     
