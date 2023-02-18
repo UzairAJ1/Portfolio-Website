@@ -1,0 +1,9 @@
+.text-blue-5001 {
+    color: '#C8C8C8';
+     height: '40px';
+      width: '50px';
+  }
+  .text-blue-5001:hover {
+    color: red;
+    transition: color 0.5s;
+  }
