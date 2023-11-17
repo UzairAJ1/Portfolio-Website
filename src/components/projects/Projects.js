@@ -24,7 +24,7 @@ const Projects = () => {
             <div className=' w-full h-screen flex flex-col justify-center items-center'>
                 <div className='-skew-y-12 absolute h-52 w-full bg-[#373226] z-10' />
                 <h2 className='pt-12text-center text-2xl uppercase font-semibold text-gray-500 tracking-[11px] hover:tracking-[2px] hover:duration-500 duration-2000 cursor-pointer'>Projects</h2>
-                <h2 className='text-center text uppercase font-semibold text-gray-500   cursor-pointer mt-4'>Please visit my Github profile to view all projects</h2>
+                <h2 className='text-center text uppercase font-semibold text-gray-500   cursor-pointer mt-4 px-4'>Please visit my Github profile to view all projects</h2>
                 <div className='flex items-center justify-center'>
                     <div className='md:pl:0 pl-4 h-full md:w-38 w-10 flex flex-col items-center justify-center '>
                 <button onClick={()=>{setScroll(scroll-1)}} className={scroll>0 ? "w-52 h-24  z-20 " : "hidden"}>
