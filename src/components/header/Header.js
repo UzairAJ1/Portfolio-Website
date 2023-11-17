@@ -49,7 +49,7 @@ const Header = () => {
           }
         `}
             </style>
-            <aside className='rounded-lg border-b sticky top-0  bg-white bg-opacity-10 h-12 flex items-center w-9/12 container mx-auto justify-between z-20'>
+            <aside className='rounded-lg border-b sticky top-0  bg-white bg-opacity-10 h-12 flex items-center md:w-9/12 w-10/12 container mx-auto justify-between z-20'>
 
 
                 <motion.ul initial={{ x: -500, scale: 0.2, opacity: 0 }} animate={{ x: 0, scale: 1, opacity: 1 }} transition={{ duration: 1.5 }} className='flex uppercase text-[11px] gap-2 avenir'>

@@ -17,7 +17,7 @@ const ProjetcsCard = ({description,backgroundImg,title}) => {
             <Image src={backgroundImg} objectFit='cover' layout='fill' />
           </motion.div>
           <h1 className='text-4xl font-light'>{title}</h1>
-          <p className='text-base md:w-9/12 w-full md:px-0 px-4'>{description}</p>
+          <p className='text-base md:w-9/12 w-full md:px-0 px-4 text-center'>{description}</p>
         </div>
 
 

@@ -19,7 +19,7 @@ import figma from '/public/icons8-figma-480.png'
 // import next from '/public/icons8-css3-480.png'
 const Skills = () => {
     return (
-        <div className=' h-screen flex flex-col items-center justify-center gap-12 pt-12'>
+        <div className=' md:h-screen h-[500px] flex flex-col items-center justify-center gap-12 pt-12'>
             <div>
                 <h2 className='text-center text-2xl uppercase font-semibold text-gray-500 tracking-[11px] hover:tracking-[2px] hover:duration-500 duration-2000 cursor-pointer'>skills</h2>
                 <h2 className='text-sm uppercase font-semibold text-gray-500 tracking-[3px] cursor-pointer'>Hover to see</h2>

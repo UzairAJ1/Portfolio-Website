@@ -15,9 +15,9 @@ const ContactMe = () => {
     return (
         <>
         <div className='flex flex-col w-full h-screen items-center justify-center md:gap-6 gap-4 container mx-auto'>
-            <h2 className='pt-12text-center text-2xl uppercase font-semibold text-gray-500 tracking-[11px] hover:tracking-[2px] hover:duration-500 duration-2000 cursor-pointer'>contact</h2>
+            <h2 className='pt-12 text-center text-2xl uppercase font-semibold text-gray-500 tracking-[11px] hover:tracking-[2px] hover:duration-500 duration-2000 cursor-pointer'>contact</h2>
             <div className='text-center'>
-                <h1 className='text-4xl font-semibold'>I have got what you need</h1>
+                <h1 className='md:px-0 px-1 text-4xl font-semibold'>I have got what you need</h1>
                 <span className='text-4xl font-semibold underline decoration-yellow-500'>Let's talk</span>
             </div>
             <div className='flex '>
@@ -33,17 +33,19 @@ const ContactMe = () => {
                 <h1>B-17 block c</h1>
             </div>
 
-            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2'>
-                <div className='flex gap-2'>
-                    <input {...register("Name", { required: true })} placeholder='Name' type="text" className='bg-[#2F3133] h-[40px] px-8 md:w-auto w-40' />
+            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2 md:w-full w-11/12 '>
+                <div className='flex gap-2 w-full justify-center'>
+                    <input {...register("Name", { required: true })} placeholder='Name' type="text" className='bg-[#2F3133] h-[40px] px-8  md:w-1/4 w-1/2' />
                     
-                    <input {...register("Email", { required: true })} placeholder='Email' type="email" className='bg-[#2F3133] px-8' />
+                    <input {...register("Email", { required: true })} placeholder='Email' type="email" className='bg-[#2F3133] px-8  md:w-1/4 w-1/2' />
                     
                 </div>
+                <div className='flex flex-col gap-2 w-full items-center'>
+                <input {...register("Subject")} name="subject"  placeholder='Subject' type="text" className='bg-[#2F3133]  h-[40px] px-8  md:w-1/2 w-full' />
+                <textarea {...register("Msg", { required: true })} name="message" placeholder="Message" className='bg-[#2F3133] px-8 pt-2  md:w-1/2 w-full' />
+                <button type='submit' className='bg-yellow-500 rounded-md font-bold text-lg h-[40px] w-32'>Submit</button>
+                </div>
                 
-                <input {...register("Subject")} name="subject"  placeholder='Subject' type="text" className='bg-[#2F3133]  h-[40px] px-8' />
-                <textarea {...register("Msg", { required: true })} name="message" placeholder="Message" className='bg-[#2F3133] px-8 pt-2' />
-                <button type='submit' className='bg-yellow-500 rounded-md font-bold text-lg h-[40px]'>Submit</button>
                 {errors.Email  && <span className='text-red-700'>Email is required</span>}
                 {errors.Name  && <span className='text-red-700'>Name is required</span>}
                 {errors.Msg  && <span className='text-red-700'>Message is required</span>}
