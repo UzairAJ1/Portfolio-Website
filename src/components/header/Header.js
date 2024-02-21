@@ -98,7 +98,7 @@ const Header = () => {
                         <a href="https://stackoverflow.com">
                             <EmailIcon className='text-blue-5001' />
                         </a>
-                        <h1 className='hidden md:flex'>Get in Touches</h1>
+                        <h1 className='hidden md:flex'>Get in Touch</h1>
                     </motion.div>
                 </div>
             </aside>
