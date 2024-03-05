@@ -16,8 +16,8 @@ const ExperienceCards = ({logo,title,company,startDate,presentDate,text1,text2,t
                 <div className='relative h-[70px] w-[70px]'>
                     <Image className='rounded-full' src={logo} objectFit='cover' layout='fill' />
                 </div>
-                <h1 className='text-3xl font-light'>{title}</h1>
-                <h1 className='font-bold text-2xl'>{company}</h1>
+                <h1 className='text-xl font-light'>{title}</h1>
+                <h1 className='font-bold text-xl'>{company}</h1>
                 <div>
                     <div className='flex gap-3'>
                     <Image src={react} className='w-10 h-9' />
@@ -27,7 +27,7 @@ const ExperienceCards = ({logo,title,company,startDate,presentDate,text1,text2,t
                 </div>
                 <h1 className='uppercase text-gray-300'>{startDate} - {presentDate}</h1>
                 <div className='flex flex-col'>
-                    <ul class="list-disc">
+                    <ul class="list-disc text-sm">
                         <li>{text1}</li>
                         <li>{text2}</li>
                         <li>{text3}</li>

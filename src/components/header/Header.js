@@ -40,8 +40,8 @@ const Header = () => {
                 {`
           .text-blue-5001{
             color: #C8C8C8;
-            height: 40px;
-            width: 50px;
+            height: 30px;
+            width: 40px;
           }
           .text-blue-5001:hover {
             color:#F59E0B;
@@ -49,16 +49,16 @@ const Header = () => {
           }
         `}
             </style>
-            <aside className='rounded-lg border-b sticky top-0  bg-white bg-opacity-10 h-12 flex items-center md:w-9/12 w-10/12 container mx-auto justify-between z-20'>
+            <div className='rounded-lg border-b sticky top-0  bg-white bg-opacity-10 h-12 flex items-center md:w-9/12 w-10/12 container mx-auto justify-between z-20'>
 
 
-                <motion.ul initial={{ x: -500, scale: 0.2, opacity: 0 }} animate={{ x: 0, scale: 1, opacity: 1 }} transition={{ duration: 1.5 }} className='flex uppercase text-[11px] gap-2 avenir'>
+                <motion.ul initial={{ x: -500, scale: 0.2, opacity: 0 }} animate={{ x: 0, scale: 1, opacity: 1 }} transition={{ duration: 1.5 }} className='flex uppercase text-[7px] gap-2 avenir'>
                     <Tooltip TransitionComponent={Zoom} title="Facebook">
                         <a
                             href="https://www.facebook.com/uzair.aaj/" >
 
 
-                            <FacebookIcon className='text-blue-5001' />
+                            <FacebookIcon className='text-blue-5001 ' />
 
                         </a>
                     </Tooltip>
@@ -98,10 +98,10 @@ const Header = () => {
                         <a href="https://stackoverflow.com">
                             <EmailIcon className='text-blue-5001' />
                         </a>
-                        <h1 className='hidden md:flex'>Get in Touch</h1>
+                        <h1 className='hidden md:flex text-sm'>Get in Touch</h1>
                     </motion.div>
                 </div>
-            </aside>
+            </div>
         </>
     )
 }
